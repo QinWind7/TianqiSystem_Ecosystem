@@ -106,13 +106,32 @@ TianqiSystem_Ecosystem/
 
 ## // 05 界面预览
 
-### App · 极简白
+### 5.1 App · 极简白
 
-[此处插入App极简白截图]
+<table>
+  <tr>
+    <td align="center"><img src="docs/screenshots/app-light-idle.jpg" width="240" alt="App 极简白 · 空闲状态"><br><sub>空闲状态 / ACCESS NETWORK</sub></td>
+    <td align="center"><img src="docs/screenshots/app-light-console.jpg" width="240" alt="App 极简白 · 控制台展开"><br><sub>控制台展开 / AI 指令生成</sub></td>
+    <td align="center"><img src="docs/screenshots/app-light-task.jpg" width="240" alt="App 极简白 · 任务执行"><br><sub>任务执行 / EXECUTE_COMPLETE()</sub></td>
+  </tr>
+</table>
 
-### Web · 黑红警报
+### 5.2 App · 黑红警报
 
-[此处插入论坛黑红警报截图]
+<table>
+  <tr>
+    <td align="center"><img src="docs/screenshots/app-alert-task.jpg" width="240" alt="App 黑红警报 · 任务执行"><br><sub>任务执行 / ALERT MODE</sub></td>
+  </tr>
+</table>
+
+### 5.3 Web · 极简白 / 黑红警报
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/screenshots/web-light-home.jpg" width="320" alt="论坛极简白首页"><br><sub>极简白 / 首页</sub></td>
+    <td align="center"><img src="docs/screenshots/web-alert-home.jpg" width="320" alt="论坛黑红警报首页"><br><sub>黑红警报 / 首页</sub></td>
+  </tr>
+</table>
 
 ---
 
