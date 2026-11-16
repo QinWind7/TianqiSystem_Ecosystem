@@ -1,0 +1,115 @@
+# ==========================================================
+#  【天启】全栈 AI 习惯养成生态 —— 根级忽略规则
+#  任何密钥 / 构建产物 / 本地数据库都不允许进入版本库
+# ==========================================================
+
+# ---------- 机密文件（最高优先级）----------
+.env
+.env.*
+*.env
+!.env.example
+!**/.env.example
+secrets.json
+*.pem
+*.p12
+*.keystore
+*.jks
+key.properties
+google-services.json
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# ---------- Django ----------
+db.sqlite3
+*.sqlite3
+*.sqlite3-journal
+staticfiles/
+media/
+backend/uploads/*
+!backend/uploads/.gitkeep
+!backend/uploads/avatar/.gitkeep
+!backend/uploads/post/.gitkeep
+!backend/uploads/board/.gitkeep
+local_settings.py
+
+# ---------- Node / Vue ----------
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# ---------- Flutter / Dart ----------
+.dart_tool/
+.packages
+.pub/
+.pub-cache/
+.flutter-plugins
+.flutter-plugins-dependencies
+**/doc/api/
+**/ios/Flutter/.last_build_id
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+app.*.symbols
+app.*.map.json
+.widget_preview/
+coverage/
+
+# ---------- Android / Gradle ----------
+.gradle/
+android/.gradle/
+android/local.properties
+android/app/debug
+android/app/profile
+android/app/release
+android/captures/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# ---------- 日志 / 临时文件 ----------
+*.log
+logs/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# ---------- 编辑器 / 系统 ----------
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
