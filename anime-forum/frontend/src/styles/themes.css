@@ -1,0 +1,53 @@
+/*
+ * 换肤基建：变量名与后端 themes_themes.config 的 JSON 键名一字不差。
+ * 变量清单（13 个）：
+ *   --color-primary / --color-primary-soft / --color-secondary / --color-accent
+ *   --color-bg / --color-surface / --color-surface-2
+ *   --color-text / --color-text-muted / --color-border
+ *   --shadow-card / --radius-card / --gradient-hero
+ *
+ * 视觉规范：与 Flutter App 对齐的浅色极简 HUD 科技风。
+ * 主色统一为深蓝 #4F46E5，默认背景 #F7F8FA，卡片 16px 圆角 + 极柔阴影。
+ * 主题 code 保持与后端一致，仅重定义各套皮肤的颜色值。
+ */
+
+/* ---------- 默认值（sakura → 极简白），data-theme 缺失时兜底 ---------- */
+:root,
+[data-theme='sakura'] {
+  --color-primary: #4f46e5;
+  --color-primary-soft: #eef0fd;
+  --color-secondary: #e5e7f5;
+  --color-accent: #dbe3ff;
+  --color-bg: #f7f8fa;
+  --color-surface: #ffffff;
+  --color-surface-2: #f4f5f8;
+  --color-text: #1a1a1a;
+  --color-text-muted: #8a8f9c;
+  --color-border: #e8eaf0;
+  --shadow-card: 0 1px 2px rgba(16, 24, 40, 0.04), 0 1px 3px rgba(16, 24, 40, 0.06);
+  --radius-card: 16px;
+  --gradient-hero: linear-gradient(135deg, #eef0fd 0%, #f7f8fa 100%);
+}
+
+/* ---------- alert 黑红警报 Dark Alert ---------- */
+[data-theme='alert'] {
+  color-scheme: dark;
+  --color-primary: #e53935;
+  --color-primary-soft: #2a1415;
+  --color-secondary: #242427;
+  --color-accent: #3a1518;
+  --color-bg: #0e0e10;
+  --color-surface: #1a1a1d;
+  --color-surface-2: #232326;
+  --color-text: #e2e2e2;
+  --color-text-muted: #888888;
+  --color-border: #331111;
+  --shadow-card: 0 0 0 1px rgba(211, 47, 47, 0.06), 0 0 16px rgba(211, 47, 47, 0.16),
+    0 2px 10px rgba(0, 0, 0, 0.55);
+  --radius-card: 16px;
+  --gradient-hero: linear-gradient(135deg, #1e1012 0%, #0e0e10 100%);
+}
+
+/* 仅保留两套核心皮肤：sakura（极简白）与 alert（黑红警报）。
+ * 其它旧皮肤已移除，失效的 code 会在 store / index.html 中回落到 sakura。 */
+
